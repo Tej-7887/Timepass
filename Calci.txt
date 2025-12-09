@@ -1,0 +1,18 @@
+ using System;
+ class Calci {
+    static void Main() {
+        Console.Write("Enter A: ");
+        int a = int.Parse(Console.ReadLine());
+        Console.Write("Enter B: ");
+        int b = int.Parse(Console.ReadLine());
+        Console.Write("Enter Operator (+,-,*,/): ");
+        char op = char.Parse(Console.ReadLine());
+        switch (op) {
+            case '+': Console.WriteLine(a + b); break;
+            case '-': Console.WriteLine(a - b); break;
+            case '*': Console.WriteLine(a * b); break;
+            case '/': Console.WriteLine(a / b); break;
+            default: Console.WriteLine("Invalid operator"); break;
+        }
+    }
+ }
